@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  avahi:
+    image: croc/avahi
+    environment:
+      - HOST_NAME=myserver
+      - DOMAIN_NAME=my.lan
+    volumes:
+      - '/etc/localtime:/etc/localtime:ro'
+      # - './config/avahi-daemon.conf:/etc/avahi/avahi-daemon.conf'
+      # - './config/hosts:/etc/avahi/hosts'
+    network_mode: 'host'
+    restart: unless-stopped

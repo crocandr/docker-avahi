@@ -1,0 +1,9 @@
+# 
+# file for non-avahi hosts
+#
+# Format:
+# <IP> <HOSTNAME>
+#
+# Example:
+# 192.168.11.21  myhost.local
+#
